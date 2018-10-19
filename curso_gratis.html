@@ -1,4 +1,22 @@
 <html>
+
+<?php
+if (isset($_COOKIE["CONTADOR"])){
+
+setcookie(contador, $_COOKIE["contador"]+1,time()+365*24*60*60);
+
+    echo "Numero de visitas: ".$_COOKIE["contador"];
+   }
+	
+	else{
+	setcookie("contador",1, time()+365*24*60*60);
+	echo "Bienvenido";
+
+
+}
+
+
+?>
 <head> 
 	<link >
 	<title>cursos/Basicos</title>
@@ -50,7 +68,7 @@ donde es utilizado para especificar o definir otros lenguajes que se involucran 
 
 <p>
 
-	
+
 autor : yekcy Bonis 
 </p>
 
