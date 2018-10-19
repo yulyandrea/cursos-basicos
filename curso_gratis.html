@@ -1,15 +1,15 @@
 <html>
 
 <?php
-if (isset($_COOKIE["CONTADOR"])){
+if (isset($_COOKIE['CONTADOR'])){
 
-setcookie(contador, $_COOKIE["contador"]+1,time()+365*24*60*60);
+setcookie(contador, $_COOKIE['contador']+1,time()+365*24*60*60);
 
-    echo "Numero de visitas: ".$_COOKIE["contador"];
+    echo "Numero de visitas: ".$_COOKIE['contador'];
    }
 	
 	else{
-	setcookie("contador",1, time()+365*24*60*60);
+	setcookie('contador',1, time()+365*24*60*60);
 	echo "Bienvenido";
 
 
